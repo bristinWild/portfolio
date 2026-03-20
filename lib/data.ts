@@ -1,0 +1,132 @@
+export const data = {
+  name: "Bristin Borah",
+  title: "Full Stack Web3 Developer",
+  location: "Guwahati, Assam, India",
+  email: "bristin.borah.7@gmail.com",
+  phone: "+91 9678208395",
+  github: "https://github.com/bristinWild",
+  linkedin: "https://linkedin.com/in/bristinborah",
+  twitter: "https://twitter.com/borah_bristin",
+  profileImage: "https://plum-labour-meadowlark-47.mypinata.cloud/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
+  ipfsFallbacks: [
+    "https://ipfs.io/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
+    "https://cloudflare-ipfs.com/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
+    "https://dweb.link/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
+    "https://gateway.pinata.cloud/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
+    "https://plum-labour-meadowlark-47.mypinata.cloud/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
+  ],
+  about: [
+    "I'm Bristin Borah — a Full Stack Web3 Developer from Guwahati, Assam with 3+ years of hands-on experience across DeFi, NFTs, GameFi, and DAO projects. I've collaborated with core teams on scalable blockchain architectures on both EVM chains and Solana.",
+    "Proficient in Solidity for EVM and Rust for Solana, with deep expertise in PDAs, CPIs, gas optimisation, and secure dApp integration. Clean coding practices and a proven ability to deliver independently or in cross-functional Web3 teams.",
+    "Currently leading the Web3 team at Wildchain, where I architected their NFT Marketplace, Dynamic NFTs, multi-chain integration, and a full DAO system including pledging, treasury, and governance smart contracts.",
+    "B.Tech in Computer Science from Assam Downtown University (2018–2022). Certified Blockchain Developer from Blockchain School.",
+  ],
+  stack: [
+    {
+      num: "01", name: "EVM · Solidity",
+      tags: ["Solidity", "Ethereum", "Polygon", "BSC", "Celo", "Hardhat", "Foundry"],
+      note: "3+ years",
+    },
+    {
+      num: "02", name: "Solana · Rust",
+      tags: ["Rust", "Anchor", "PDAs", "CPIs", "SPL Tokens", "Metaplex"],
+      note: "3+ years",
+    },
+    {
+      num: "03", name: "Backend",
+      tags: ["NestJS", "Node.js", "Express.js", "TypeScript", "JavaScript", "MongoDB"],
+      note: "3+ years",
+    },
+    {
+      num: "04", name: "Frontend",
+      tags: ["React.js", "Next.js", "TypeScript", "ethers.js", "web3.js"],
+      note: "3+ years",
+    },
+    {
+      num: "05", name: "Other Chains",
+      tags: ["Algorand", "Stellar", "Kyber Network", "DEX Aggregators", "Gitcoin Passport"],
+      note: "Explored",
+    },
+  ],
+  experience: [
+    {
+      num: "01",
+      role: "Lead Web3 Developer",
+      company: "Wildchain",
+      period: "Oct 2022 — Present",
+      bullets: [
+        "Led the Web3 team and architected the Wildchain NFT Marketplace",
+        "Built Auction contracts for NFTs, Dynamic NFTs, and multi-chain integration",
+        "Designed the Technical Architecture of the Wildchain DAO",
+        "Developed DAO smart contracts — Pledging, Treasury, and Governance",
+        "Researched and prototyped Gitcoin Passport integration",
+      ],
+    },
+    {
+      num: "02",
+      role: "Blockchain Developer",
+      company: "Idea Usher",
+      period: "Jul 2022 — Oct 2022",
+      bullets: [
+        "Built Order Book and Custodial Wallet module for a Centralised Exchange",
+        "Contributed to Solana NFT project — Rust smart contracts in the ecosystem",
+        "Integrated DEX aggregators for liquidity (Kyber Network)",
+        "Created NFT Marketplace contract and integrated it with the backend",
+      ],
+    },
+    {
+      num: "03",
+      role: "Blockchain Engineer Intern",
+      company: "Impactional Games",
+      period: "Mar 2022 — Jul 2022",
+      bullets: [
+        "Worked on GameFi projects — P2E games and escrow-based game contracts",
+        "Researched centralised exchange architecture and DeFi protocol design",
+      ],
+    },
+    {
+      num: "04",
+      role: "Co-Founder",
+      company: "Luster.network",
+      period: "Jun 2021 — Jul 2022",
+      bullets: [
+        "Built a Web3 learning community and contributed to a POE Platform",
+        "Conducted workshops and events across colleges and communities",
+        "Operated Web3 bootcamps to onboard developers into the ecosystem",
+      ],
+    },
+  ],
+  projects: [
+    {
+      num: "01",
+      name: "Wildchain Marketplace",
+      desc: "NFT marketplace with auction contracts, Dynamic NFTs, and multi-chain support. Includes full DAO system — pledging, treasury, and governance contracts.",
+      href: "#",
+    },
+    {
+      num: "02",
+      name: "Centralised Exchange",
+      desc: "Order book engine and custodial wallet system for a CEX. Integrated DEX aggregator (Kyber Network) for on-chain liquidity routing.",
+      href: "#",
+    },
+    {
+      num: "03",
+      name: "Solana NFT Platform",
+      desc: "NFT marketplace on the Solana ecosystem with Rust smart contracts using Anchor and Metaplex. Full marketplace contract with backend integration.",
+      href: "#",
+    },
+    {
+      num: "04",
+      name: "GameFi P2E Contracts",
+      desc: "Play-to-earn and escrow-based game contracts for on-chain game economies. DeFi protocol integrations for in-game liquidity.",
+      href: "#",
+    },
+    {
+      num: "05",
+      name: "More on GitHub",
+      desc: "Open source contributions, personal experiments, and protocol research — all publicly available on GitHub.",
+      href: "https://github.com/bristinWild",
+      external: true,
+    },
+  ],
+};

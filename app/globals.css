@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #edecea;
+  --bg-alt: #e2e0dc;
+  --surface: #e8e6e2;
+  --text: #1c1c1a;
+  --muted: #6b6860;
+  --border: #d0cdc8;
+  --mono: 'IBM Plex Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0; padding: 0;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.pulse-dot { animation: pulse-dot 2.4s infinite; }
+
+/* Shared mobile rules */
+@media (max-width: 768px) {
+  .section-pad { padding: 40px 24px 0 !important; }
+  .two-col-grid { grid-template-columns: 1fr !important; }
+  .col-left { border-right: none !important; border-bottom: 1px solid var(--border) !important; }
+  .col-pad { padding-left: 24px !important; padding-right: 24px !important; padding-bottom: 36px !important; }
+}
