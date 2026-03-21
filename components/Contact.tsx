@@ -4,11 +4,14 @@ import { data } from "@/lib/data";
 const contacts = [
   { label: "Email", value: data.email, href: `mailto:${data.email}` },
   { label: "Phone", value: data.phone, href: `tel:${data.phone}` },
-  { label: "GitHub", value: "github.com/bristinborah", href: data.github, external: true },
-  { label: "LinkedIn", value: "linkedin.com/in/bristinborah", href: data.linkedin, external: true },
-  { label: "X", value: "   twitter.com/borah_bristin", href: data.twitter, external: true },
-];
+  { label: "GitHub", value: "github.com/bristinWild", href: data.github, external: true },
+  { label: "LinkedIn", value: "linkedin.com/in/bristin-borah-739b63179/", href: data.linkedin, external: true },
+  { label: "X", value: "   x.com/borah_bristin", href: data.twitter, external: true },
+  { label: "crates.io", value: "https://crates.io/users/bristinWild", href: data.cratesio, external: true },
+  { label: "npmjs", value: "https://www.npmjs.com/~bristinwild", href: data.cratesio, external: true },
 
+
+];
 export default function Contact() {
   return (
     <>
