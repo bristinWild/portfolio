@@ -149,11 +149,11 @@ export default function Hero() {
     grid-template-columns: 1fr !important;
     min-height: auto !important;
   }
-  .hero-left {
-    border-right: none !important;
-    border-bottom: 1px solid var(--border) !important;
-    min-height: 100vw !important;
-  }
+ .hero-left {
+  border-right: none !important;
+  border-bottom: 1px solid var(--border) !important;
+  min-height: calc(100vh - 61px) !important;
+}
   .hero-right {
     padding: 40px 24px 60px !important;
   }
