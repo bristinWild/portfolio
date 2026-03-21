@@ -108,9 +108,8 @@ export default function Hero() {
 }
 `}</style> */}
           <p style={{ fontSize: "0.875rem", fontWeight: 300, color: "var(--muted)", maxWidth: 400, lineHeight: 1.8, marginBottom: "32px" }}>
-            3+ years building on EVM chains and Solana. From DeFi protocols and NFT
-            marketplaces to DAO governance systems — I write the contracts, architect
-            the backend, and ship the product.
+            4+ years building on EVM chains and Solana. From DeFi protocols and Advance NFT projects to Web3 security & Infrastructure layer , I write the contracts, architect
+            ideas, build projects and ship product.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
             <a href="#experience" style={{ fontFamily: "var(--mono)", fontSize: "0.65rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--text)", textDecoration: "underline", textUnderlineOffset: "4px" }}>

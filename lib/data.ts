@@ -1,5 +1,5 @@
 export const data = {
-  name: "Bristin Borah",
+  name: "Bristin",
   title: "Full Stack Web3 Developer",
   location: "Guwahati, Assam, India",
   email: "bristin.borah.7@gmail.com",
@@ -16,37 +16,43 @@ export const data = {
     "https://plum-labour-meadowlark-47.mypinata.cloud/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
   ],
   about: [
-    "I'm Bristin Borah — a Full Stack Web3 Developer from Guwahati, Assam with 3+ years of hands-on experience across DeFi, NFTs, GameFi, and DAO projects. I've collaborated with core teams on scalable blockchain architectures on both EVM chains and Solana.",
-    "Proficient in Solidity for EVM and Rust for Solana, with deep expertise in PDAs, CPIs, gas optimisation, and secure dApp integration. Clean coding practices and a proven ability to deliver independently or in cross-functional Web3 teams.",
-    "Currently leading the Web3 team at Wildchain, where I architected their NFT Marketplace, Dynamic NFTs, multi-chain integration, and a full DAO system including pledging, treasury, and governance smart contracts.",
+    "I'm Bristin Borah, A Full Stack Web3 Developer from Guwahati, Assam with 4+ years of hands-on experience across DeFi, NFTs, GameFi, Infrastructure projects. I've collaborated with core teams on scalable blockchain architectures on both EVM chains and Solana.",
+    "Proficient in Solidity for EVM and Rust for Solana, with deep expertise in Web3 Architectural Designs, SDKs, Backend infrastructures, Trustless Agents(ERC 8004), x402 payments, Account Abstraction(ERC 4337), gas optimisation, and secure dApp integration. Clean coding practices and a proven ability to deliver independently or in cross-functional Web3 teams.",
+    "Currently leading the Web3 team at Wildchain, where I architected and developed their, Dynamic NFT Marketplace, GamiFi elements, LST stakings , Security protocol for restaker with proper consensus validation for offcahin data, multi-chain integration, and a full DAO system including pledging, treasury, and governance smart contracts.",
     "B.Tech in Computer Science from Assam Downtown University (2018–2022). Certified Blockchain Developer from Blockchain School.",
   ],
   stack: [
     {
       num: "01", name: "EVM · Solidity",
-      tags: ["Solidity", "Ethereum", "Polygon", "BSC", "Celo", "Hardhat", "Foundry"],
-      note: "3+ years",
+      tags: ["Solidity", "Ethereum", "Polygon", "BSC", "Celo", "BNB Chain", "CreditCoin", "Status Network", "Foundry"],
+      note: "4+ years",
     },
     {
       num: "02", name: "Solana · Rust",
-      tags: ["Rust", "Anchor", "PDAs", "CPIs", "SPL Tokens", "Metaplex"],
+      tags: ["Rust", "Anchor", "PDAs", "CPIs", "SPL Tokens", "TOKEN2022", "Arcium"],
       note: "3+ years",
     },
     {
       num: "03", name: "Backend",
-      tags: ["NestJS", "Node.js", "Express.js", "TypeScript", "JavaScript", "MongoDB"],
+      tags: ["NestJS", "Express.js", "TypeScript", "JavaScript", "Axum", "MongoDB", "PostgresSQL", "Redis", "graphql"],
       note: "3+ years",
     },
     {
       num: "04", name: "Frontend",
-      tags: ["React.js", "Next.js", "TypeScript", "ethers.js", "web3.js"],
+      tags: ["React.js", "Next.js", "Tailwind css", "TypeScript", "ethers.js", "web3.js"],
       note: "3+ years",
     },
     {
-      num: "05", name: "Other Chains",
-      tags: ["Algorand", "Stellar", "Kyber Network", "DEX Aggregators", "Gitcoin Passport"],
+      num: "05", name: "Other chains and Protocols",
+      tags: ["Algorand", "Logos", "Stellar", "Uniswap", "PancakeSwap", "Eigen Layer", "DEX Aggregators"],
       note: "Explored",
     },
+    {
+      num: "06", name: "AI and Automations",
+      tags: ["N8N", "LangChain", "ERC 8004", "OpenAI", "ERC 8183"],
+      note: "Explored",
+    },
+
   ],
   experience: [
     {
@@ -55,7 +61,7 @@ export const data = {
       company: "Wildchain",
       period: "Oct 2022 — Present",
       bullets: [
-        "Led the Web3 team and architected the Wildchain NFT Marketplace",
+        "Led the Web3 team and architected the Wildchain's Web3 Projects",
         "Built Auction contracts for NFTs, Dynamic NFTs, and multi-chain integration",
         "Designed the Technical Architecture of the Wildchain DAO",
         "Developed DAO smart contracts — Pledging, Treasury, and Governance",

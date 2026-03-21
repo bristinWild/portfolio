@@ -20,7 +20,7 @@ export default function About() {
             ))}
             <a href={data.github} target="_blank" rel="noopener noreferrer"
               style={{ fontFamily: "var(--mono)", fontSize: "0.65rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--text)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
-              github.com/bristinborah ↗
+              github.com/bristinWild ↗
             </a>
           </div>
         </div>
