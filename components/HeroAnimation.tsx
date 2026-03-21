@@ -11,19 +11,27 @@ export default function HeroAnimation() {
     if (!ctx) return;
 
     let animId: number;
-    let W = canvas.offsetWidth;
-    let H = canvas.offsetHeight;
-    canvas.width = W;
-    canvas.height = H;
 
-    const PARTICLE_COUNT = 120;
-    const CONNECTION_DIST = 90;
+    function init() {
+      if (!canvas || !ctx) return;
+      const W = canvas.offsetWidth;
+      const H = canvas.offsetHeight;
+      canvas.width = W;
+      canvas.height = H;
+      return { W, H };
+    }
+
+    let dims = init();
+    if (!dims) return;
+    let { W, H } = dims;
+
+    const PARTICLE_COUNT = 140;
+    const CONNECTION_DIST = 100;
     const CENTER_PULL = 0.012;
-    const cx = W / 2;
-    const cy = H / 2;
-    const RADIUS = Math.min(W, H) * 0.38;
+    let cx = W / 2;
+    let cy = H / 2;
+    let RADIUS = Math.min(W, H) * 0.42;
 
-    // Warm palette matching --text / --muted / --border
     const COLORS = ["#1c1c1a", "#6b6860", "#d0cdc8", "#a8a39c"];
 
     type Particle = {
@@ -33,7 +41,7 @@ export default function HeroAnimation() {
       angle: number; speed: number; orbitR: number;
     };
 
-    const particles: Particle[] = Array.from({ length: PARTICLE_COUNT }, () => {
+    let particles: Particle[] = Array.from({ length: PARTICLE_COUNT }, () => {
       const angle = Math.random() * Math.PI * 2;
       const orbitR = RADIUS * (0.15 + Math.random() * 0.85);
       return {
@@ -50,31 +58,65 @@ export default function HeroAnimation() {
     });
 
     let mouse = { x: cx, y: cy };
+
     const onMove = (e: MouseEvent) => {
       const rect = canvas.getBoundingClientRect();
       mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };
     };
+
+    const onTouch = (e: TouchEvent) => {
+      const rect = canvas.getBoundingClientRect();
+      const t = e.touches[0];
+      mouse = { x: t.clientX - rect.left, y: t.clientY - rect.top };
+    };
+
+    const onTouchEnd = () => {
+      mouse = { x: cx, y: cy };
+    };
+
     canvas.addEventListener("mousemove", onMove);
+    canvas.addEventListener("touchmove", onTouch, { passive: true });
+    canvas.addEventListener("touchend", onTouchEnd);
 
     const onResize = () => {
+      if (!canvas) return;
       W = canvas.offsetWidth;
       H = canvas.offsetHeight;
       canvas.width = W;
       canvas.height = H;
+      cx = W / 2;
+      cy = H / 2;
+      RADIUS = Math.min(W, H) * 0.42;
+      // Rebuild particles centered on new dimensions
+      particles = Array.from({ length: PARTICLE_COUNT }, () => {
+        const angle = Math.random() * Math.PI * 2;
+        const orbitR = RADIUS * (0.15 + Math.random() * 0.85);
+        return {
+          x: cx + Math.cos(angle) * orbitR,
+          y: cy + Math.sin(angle) * orbitR,
+          vx: (Math.random() - 0.5) * 0.4,
+          vy: (Math.random() - 0.5) * 0.4,
+          r: 1 + Math.random() * 1.8,
+          color: COLORS[Math.floor(Math.random() * COLORS.length)],
+          angle,
+          speed: (Math.random() - 0.5) * 0.003,
+          orbitR,
+        };
+      });
+      mouse = { x: cx, y: cy };
     };
+
     window.addEventListener("resize", onResize);
 
     function draw() {
       if (!ctx) return;
       ctx.clearRect(0, 0, W, H);
 
-      // Update particles — slow orbital drift
       for (const p of particles) {
         p.angle += p.speed;
         const targetX = cx + Math.cos(p.angle) * p.orbitR;
         const targetY = cy + Math.sin(p.angle) * p.orbitR;
 
-        // Gentle pull toward orbit + mouse repel
         const dx = mouse.x - p.x;
         const dy = mouse.y - p.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
@@ -91,7 +133,6 @@ export default function HeroAnimation() {
         p.y += p.vy;
       }
 
-      // Draw connections
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const a = particles[i];
@@ -111,7 +152,6 @@ export default function HeroAnimation() {
         }
       }
 
-      // Draw particles
       for (const p of particles) {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
@@ -121,8 +161,7 @@ export default function HeroAnimation() {
         ctx.globalAlpha = 1;
       }
 
-      // Infinite / lemniscate symbol
-      // Infinite symbol — parametric lemniscate
+      // Lemniscate ∞
       ctx.save();
       ctx.translate(cx, cy);
       ctx.strokeStyle = "rgba(108,104,96,0.6)";
@@ -148,6 +187,8 @@ export default function HeroAnimation() {
     return () => {
       cancelAnimationFrame(animId);
       canvas.removeEventListener("mousemove", onMove);
+      canvas.removeEventListener("touchmove", onTouch);
+      canvas.removeEventListener("touchend", onTouchEnd);
       window.removeEventListener("resize", onResize);
     };
   }, []);

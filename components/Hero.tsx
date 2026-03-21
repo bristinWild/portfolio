@@ -64,8 +64,49 @@ export default function Hero() {
             marginBottom: "40px",
             color: "var(--text)",
           }}>
-            Bristin<br /><em>Borah</em>
+            Bristin<br />
+            <em style={{ position: "relative", display: "inline-block", animation: "glitch 2s infinite" }}>
+              Borah
+              <span aria-hidden="true" style={{
+                content: "Borah",
+                position: "absolute",
+                top: 0, left: 0,
+                color: "var(--text)",
+                fontFamily: "inherit",
+                fontStyle: "inherit",
+                fontWeight: "inherit",
+                fontSize: "inherit",
+                animation: "glitchTop 2s infinite",
+                clipPath: "polygon(0 0, 100% 0, 100% 35%, 0 35%)",
+                opacity: 0,
+              }}>Borah</span>
+              <span aria-hidden="true" style={{
+                content: "Borah",
+                position: "absolute",
+                top: 0, left: 0,
+                color: "var(--text)",
+                fontFamily: "inherit",
+                fontStyle: "inherit",
+                fontWeight: "inherit",
+                fontSize: "inherit",
+                animation: "glitchBot 2s infinite",
+                clipPath: "polygon(0 65%, 100% 65%, 100% 100%, 0 100%)",
+                opacity: 0,
+              }}>Borah</span>
+            </em>
           </h1>
+
+          {/* <style>{`
+  @keyframes sketch {
+    to { stroke-dashoffset: 0; }
+  }
+  @keyframes fadeInText {
+  to { opacity: 1; }
+}
+@keyframes svgFadeOut {
+  to { opacity: 0; }
+}
+`}</style> */}
           <p style={{ fontSize: "0.875rem", fontWeight: 300, color: "var(--muted)", maxWidth: 400, lineHeight: 1.8, marginBottom: "32px" }}>
             3+ years building on EVM chains and Solana. From DeFi protocols and NFT
             marketplaces to DAO governance systems — I write the contracts, architect
@@ -83,21 +124,41 @@ export default function Hero() {
       </div>
 
       <style>{`
-        @media (max-width: 768px) {
-          .hero-grid {
-            grid-template-columns: 1fr !important;
-            min-height: auto !important;
-          }
-          .hero-left {
-            border-right: none !important;
-            border-bottom: 1px solid var(--border) !important;
-            min-height: 380px !important;
-          }
-          .hero-right {
-            padding: 40px 24px 60px !important;
-          }
-        }
-      `}</style>
+@keyframes glitch {
+  0%, 60%, 100% { transform: none; }
+  63% { transform: skew(-0.5deg); }
+  66% { transform: skew(0.5deg); }
+  69% { transform: skew(-0.3deg); }
+}
+@keyframes glitchTop {
+  0%, 60%, 100% { opacity: 0; transform: none; }
+  63% { opacity: 1; transform: translate(-4px, -2px); }
+  66% { opacity: 1; transform: translate(4px, 0); }
+  69% { opacity: 1; transform: translate(-2px, -1px); }
+  72% { opacity: 0; }
+}
+@keyframes glitchBot {
+  0%, 60%, 100% { opacity: 0; transform: none; }
+  63% { opacity: 1; transform: translate(4px, 2px); }
+  66% { opacity: 1; transform: translate(-4px, 0); }
+  69% { opacity: 1; transform: translate(2px, 1px); }
+  72% { opacity: 0; }
+}
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+  .hero-left {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border) !important;
+    min-height: 100vw !important;
+  }
+  .hero-right {
+    padding: 40px 24px 60px !important;
+  }
+}
+`}</style>
     </>
   );
 }

@@ -6,7 +6,7 @@ const contacts = [
   { label: "Phone", value: data.phone, href: `tel:${data.phone}` },
   { label: "GitHub", value: "github.com/bristinborah", href: data.github, external: true },
   { label: "LinkedIn", value: "linkedin.com/in/bristinborah", href: data.linkedin, external: true },
-  { label: "X", value: "twitter.com/borah_bristin", href: data.twitter, external: true },
+  { label: "X", value: "   twitter.com/borah_bristin", href: data.twitter, external: true },
 ];
 
 export default function Contact() {
@@ -38,7 +38,7 @@ export default function Contact() {
               >
                 <span style={{ fontFamily: "var(--mono)", fontSize: "0.65rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--muted)", flexShrink: 0 }}>{c.label}</span>
                 <span className="contact-value" style={{ fontFamily: "var(--mono)", fontSize: "0.7rem", color: "var(--text)", textAlign: "center", flex: 1, padding: "0 12px" }}>{c.value}</span>
-                <span style={{ color: "var(--muted)", flexShrink: 0 }}>↗</span>
+                <span style={{ color: "var(--muted)", flexShrink: 0 }}>⌯⌲</span>
               </a>
             ))}
           </div>
