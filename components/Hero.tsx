@@ -52,8 +52,8 @@ export default function Hero() {
           justifyContent: "flex-end",
         }} className="hero-right">
           <p style={{ fontFamily: "var(--mono)", fontSize: "0.65rem", letterSpacing: "0.1em", color: "var(--muted)", marginBottom: "24px", lineHeight: 1.8 }}>
-            DeFi · NFTs · GameFi · DAOs · Smart Contracts<br />
-            EVM Chains · Solana · Remote-first
+            DeFi · NFTs · GameFi · x402 · Smart Contracts · Anchor Programs<br />
+            EVM Chains · Solana · Backend · Frontend ·Remote-first
           </p>
           <h1 style={{
             fontFamily: "'Cormorant Garamond', Georgia, serif",
