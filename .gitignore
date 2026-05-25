@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Cliper — auto-managed
+package-lock.json
+.cliper/cache/
+.cliper/prompt-*.md
