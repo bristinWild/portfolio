@@ -148,4 +148,18 @@ export const data = {
       external: true,
     },
   ],
+  awards: [
+    {
+      num: "01",
+      name: "Awarded Logos LP-0012: Event/Log Mechanism",
+      desc: "Designed and implemented a structured event system for LEZ programs, adding emit_event() API, atomic event flushing via ProgramOutput.events, and a getTransactionReceipt RPC returning events for both successful and failed transactions. Delivered lez-events-decoder CLI for human-readable event output, RejectedTxStore for failure-path event preservation, and 215 passing tests across the full LEZ workspace.",
+      href: "#",
+      LogosLinks12: {
+        MergedPR: "https://github.com/logos-co/lambda-prize/pull/14",
+        ForkedRepository: "https://github.com/bristinWild/logos-execution-zone",
+      },
+      external: true,
+    },
+
+  ],
 };
