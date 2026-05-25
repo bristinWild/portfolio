@@ -1,0 +1,10 @@
+{
+  "active": [
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json",
+    "README.md"
+  ],
+  "watched": [],
+  "updatedAt": "2026-05-25T09:33:17.361Z"
+}

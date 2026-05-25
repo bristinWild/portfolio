@@ -36,7 +36,7 @@ export default function Hero() {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", fontFamily: "var(--mono)", fontSize: "0.65rem", letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--muted)" }}>
               <span className="pulse-dot" style={{ display: "inline-block", width: 6, height: 6, borderRadius: "50%", background: "#5a9e7a", flexShrink: 0 }} />
-              Available for opportunities
+              not-Available for opportunities
             </div>
             <a href="#contact" style={{ fontFamily: "var(--mono)", fontSize: "0.65rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--text)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
               Get in touch ↗
