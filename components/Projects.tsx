@@ -103,7 +103,7 @@ export default function Projects() {
     <>
       <section id="projects" style={{ background: "var(--bg)", borderBottom: "1px solid var(--border)" }}>
         <div style={{ padding: "60px 40px 0" }} className="section-pad">
-          <span style={{ fontFamily: "var(--mono)", fontSize: "0.68rem", color: "var(--muted)", letterSpacing: "0.05em", display: "block", marginBottom: "12px" }}>03</span>
+          <span style={{ fontFamily: "var(--mono)", fontSize: "0.68rem", color: "var(--muted)", letterSpacing: "0.05em", display: "block", marginBottom: "12px" }}>04</span>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: "clamp(2.2rem, 5vw, 4rem)", lineHeight: 1, letterSpacing: "-0.01em", color: "var(--text)" }}>Projects</h2>
         </div>
         <div style={{ marginTop: "48px" }}>

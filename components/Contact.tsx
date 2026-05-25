@@ -8,7 +8,7 @@ const contacts = [
   { label: "LinkedIn", value: "linkedin.com/in/bristin-borah-739b63179/", href: data.linkedin, external: true },
   { label: "X", value: "   x.com/borah_bristin", href: data.twitter, external: true },
   { label: "crates.io", value: "https://crates.io/users/bristinWild", href: data.cratesio, external: true },
-  { label: "npmjs", value: "https://www.npmjs.com/~bristinwild", href: data.cratesio, external: true },
+  { label: "npmjs", value: "https://www.npmjs.com/~bristinwild", href: data.npmjs, external: true },
 
 
 ];
@@ -17,7 +17,7 @@ export default function Contact() {
     <>
       <section id="contact" style={{ background: "var(--bg-alt)", borderBottom: "1px solid var(--border)" }}>
         <div style={{ padding: "60px 40px 0" }} className="section-pad">
-          <span style={{ fontFamily: "var(--mono)", fontSize: "0.68rem", color: "var(--muted)", letterSpacing: "0.05em", display: "block", marginBottom: "12px" }}>04</span>
+          <span style={{ fontFamily: "var(--mono)", fontSize: "0.68rem", color: "var(--muted)", letterSpacing: "0.05em", display: "block", marginBottom: "12px" }}>05</span>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: "clamp(2.2rem, 5vw, 4rem)", lineHeight: 1, letterSpacing: "-0.01em", color: "var(--text)" }}>Contact</h2>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", marginTop: "48px" }} className="two-col-grid">

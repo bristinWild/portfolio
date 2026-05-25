@@ -9,6 +9,7 @@ export const data = {
   twitter: "https://x.com/borah_bristin",
   profileImage: "https://plum-labour-meadowlark-47.mypinata.cloud/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
   cratesio: "https://crates.io/users/bristinWild",
+
   npmjs: "https://www.npmjs.com/~bristinwild",
   ipfsFallbacks: [
     "https://ipfs.io/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
