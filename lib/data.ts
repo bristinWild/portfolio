@@ -19,9 +19,9 @@ export const data = {
     "https://plum-labour-meadowlark-47.mypinata.cloud/ipfs/bafybeibjelns3uwhff3mwun4csdggvz3a7krzqg44mvhvfy7hrzj4qgrq4",
   ],
   about: [
-    "I'm Bristin Borah, A Full Stack Web3 Developer from Guwahati, Assam with 4+ years of hands-on experience across DeFi, NFTs, GameFi, Infrastructure projects. I've collaborated with core teams on scalable blockchain architectures on both EVM chains and Solana.",
-    "Proficient in Solidity for EVM and Rust for Solana, with deep expertise in Web3 Architectural Designs, SDKs, Backend infrastructures, Trustless Agents(ERC 8004), x402 payments, Account Abstraction(ERC 4337), gas optimisation, and secure dApp integration. Clean coding practices and a proven ability to deliver independently or in cross-functional Web3 teams.",
-    "Currently leading the Web3 team at Wildchain, where I architected and developed their, Dynamic NFT Marketplace, GamiFi elements, LST stakings , Security protocol for restaker with proper consensus validation for offcahin data, multi-chain integration, and a full DAO system including pledging, treasury, and governance smart contracts.",
+    "I'm Bristin Borah, A Full Stack Web3 Developer from Guwahati, Assam with 4+ years of hands-on experience across DeFi, NFTs, GameFi, Infrastructure projects. I've collaborated with core teams on scalable blockchain architectures on both EVM chains and Solana, now focused on privacy and zero-knowledge infrastructure",
+    "Winner of a Logos Lambda prize (LP-0012) and an active contributor across the Logos/IFT ecosystem; currently building Tuniq, a confidential-computation layer on Logos LEZ that proves results to Solana without ever exposing the underlying data.",
+    "Deep Rust experience from zkVM and protocol internals to validator infrastructure, backed by production smart contracts, SDKs, and a full restaking system shipped at Wildchain.",
     "B.Tech in Computer Science from Assam Downtown University (2018–2022). Certified Blockchain Developer from Blockchain School.",
   ],
   stack: [
