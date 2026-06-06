@@ -111,6 +111,8 @@ export default function Projects() {
             const isDrox = item.name === "Drox Social";
             const isCredgate = item.name === "Credgate SDKs";
             const isOzon = item.name === "Ozon SDKs & Tool Kits";
+            const isTuniq = item.name === "Tuniq - Logos Zk for Solana";
+            const isCliper = item.name === "Cliper SDK";
 
             if (isDrox) {
               return (
@@ -125,6 +127,41 @@ export default function Projects() {
                 >
                   <LinkBtn href="https://github.com/bristinWild/drox-backend" label="Backend ↗" />
                   <LinkBtn href="https://github.com/bristinWild/Drox" label="Frontend ↗" />
+                </ExpandableRow>
+              );
+            }
+
+            if (isCliper) {
+              return (
+                <ExpandableRow
+                  key={item.num}
+                  item={item}
+                  hovered={hovered}
+                  open={droxOpen}
+                  onHoverEnter={() => setHovered(item.num)}
+                  onHoverLeave={() => setHovered(null)}
+                  onToggle={() => setDroxOpen(!droxOpen)}
+                >
+                  <LinkBtn href="https://github.com/bristinWild/cliperHq" label="Repo ↗" />
+                  <LinkBtn href="https://www.npmjs.com/package/@cliperhq/cliper" label="NPM ↗" />
+                </ExpandableRow>
+              );
+            }
+
+
+            if (isTuniq) {
+              return (
+                <ExpandableRow
+                  key={item.num}
+                  item={item}
+                  hovered={hovered}
+                  open={droxOpen}
+                  onHoverEnter={() => setHovered(item.num)}
+                  onHoverLeave={() => setHovered(null)}
+                  onToggle={() => setDroxOpen(!droxOpen)}
+                >
+                  <LinkBtn href="https://github.com/bristinWild/tuniq-experiments" label="Research & Experiments ↗" />
+                  <LinkBtn href="https://github.com/bristinWild/Tuniq" label="Main Repository ↗" />
                 </ExpandableRow>
               );
             }

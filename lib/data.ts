@@ -115,8 +115,30 @@ export const data = {
       desc: "The financial system is being rewritten on-chain. CredGate is a cross-chain credit layer Powered by Creditcoin's USC Testnet, Turning wallet history into a verified identity that any protocol on any chain can trust.",
       href: "https://github.com/bristinWild/CredGate",
     },
+
     {
       num: "02",
+      name: "Tuniq - Logos Zk for Solana",
+      desc: "Confidential computation on Logos LEZ; runs private predicates with RISC Zero proofs that settle to Solana without exposing the underlying data",
+      href: "#",
+      TuniqLinks: {
+        ResearchExperiments: "https://github.com/bristinWild/tuniq-experiments",
+        MainRepository: "https://github.com/bristinWild/Tuniq",
+      },
+    },
+
+    {
+      num: "03",
+      name: "Cliper SDK",
+      desc: "Syncs project context with every git event. Talks back. Generates model-specific prompts for Claude and ChatGPT",
+      href: "#",
+      credgateLinks: {
+        repo: "https://github.com/bristinWild/cliperHq",
+        installation: "https://www.npmjs.com/package/@cliperhq/cliper",
+      },
+    },
+    {
+      num: "04",
       name: "Drox Social",
       desc: "Drox is a new-age web3 social and travel platform that helps people organize and join nearby real-world activities with friends and strangers. Built on the Status Network, it uses token-based commitment and reputation to make participation more reliable and community-driven.",
       href: "#",
@@ -126,13 +148,13 @@ export const data = {
       },
     },
     {
-      num: "03",
+      num: "05",
       name: "Predicted AI",
       desc: "Predicted.ai is an AI-powered platform that predicts which individuals are most likely to engage with a product or community. It analyzes product context to generate per-user likelihood scores along with insights, helping businesses target high-intent users and improve acquisition efficiency.",
       href: "https://github.com/bristinWild/predictedAI",
     },
     {
-      num: "04",
+      num: "06",
       name: "Credgate SDKs",
       desc: "Developer SDKs for integrating CredGate's on-chain credit layer ,verify wallet identities, query credit scores, and build trust-aware protocols across any EVM chain.",
       href: "#",
@@ -142,7 +164,7 @@ export const data = {
       },
     },
     {
-      num: "05",
+      num: "07",
       name: "Ozon SDKs & Tool Kits",
       desc: "ozon-cli is a command-line tool that enables developers and operators to register, manage, and interact with Ozon's restaking protocol and AVS infrastructure on Solana. Operator Nodes Client is an Operator Slashboard helps to monitor operator nodes getting slashed for mishaving while validating. AVS SDK is Command-line tool for AVS (Actively Validated Service) owners to create, manage, and monitor oracle validation tasks on Solana which is a part of the Ozon Restaking Protocol.",
       href: "#",
