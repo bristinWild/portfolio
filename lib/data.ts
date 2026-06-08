@@ -2,7 +2,7 @@ export const data = {
   name: "Bristin",
   title: "Full Stack Web3 Developer",
   location: "Guwahati, Assam, India",
-  email: "bristin.borah.7@gmail.com",
+  email: "bristineth@gmail.com",
   phone: "+91 9678208395",
   github: "https://github.com/bristinWild",
   linkedin: "https://www.linkedin.com/in/bristin-borah-739b63179/",
