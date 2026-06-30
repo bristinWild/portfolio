@@ -129,12 +129,12 @@ export const data = {
 
     {
       num: "03",
-      name: "Cliper SDK",
-      desc: "Syncs project context with every git event. Talks back. Generates model-specific prompts for Claude and ChatGPT",
+      name: "Cliper Memory",
+      desc: "Cliper Memory is a repository intelligence engine that converts source code, Git history, architecture, dependencies, and project metadata into structured memories that can be ingested by knowledge graph systems like Cognee.",
       href: "#",
       credgateLinks: {
-        repo: "https://github.com/bristinWild/cliperHq",
-        installation: "https://www.npmjs.com/package/@cliperhq/cliper",
+        repo: "https://github.com/bristinWild/cliper-sdk",
+        installation: "",
       },
     },
     {
