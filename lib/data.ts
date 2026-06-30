@@ -134,7 +134,6 @@ export const data = {
       href: "#",
       credgateLinks: {
         repo: "https://github.com/bristinWild/cliper-sdk",
-        installation: "",
       },
     },
     {
