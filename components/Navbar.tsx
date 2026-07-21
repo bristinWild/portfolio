@@ -1,6 +1,30 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { data } from "@/lib/data";
+
+type Theme = "light" | "dark";
+const themeSubscribers = new Set<() => void>();
+
+function getTheme(): Theme {
+  if (typeof window === "undefined") return "light";
+  const storedTheme = window.localStorage.getItem("theme");
+  if (storedTheme === "light" || storedTheme === "dark") return storedTheme;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function subscribeToTheme(callback: () => void) {
+  themeSubscribers.add(callback);
+  const media = window.matchMedia("(prefers-color-scheme: dark)");
+  media.addEventListener("change", callback);
+  return () => {
+    themeSubscribers.delete(callback);
+    media.removeEventListener("change", callback);
+  };
+}
+
+function notifyThemeChange() {
+  themeSubscribers.forEach((callback) => callback());
+}
 
 const links = [
   { label: "About", href: "#about" },
@@ -12,11 +36,19 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const theme = useSyncExternalStore(subscribeToTheme, getTheme, () => "light");
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [open]);
+
+  const toggleTheme = () => {
+    const nextTheme = theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = nextTheme;
+    window.localStorage.setItem("theme", nextTheme);
+    notifyThemeChange();
+  };
 
   const close = () => setOpen(false);
 
@@ -75,6 +107,17 @@ export default function Navbar() {
             fontSize: "1.1rem",
             color: "var(--text)",
           }}>μ</span>
+
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+            aria-pressed={theme === "dark"}
+          >
+            <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
+            <span className="theme-toggle-label">{theme === "dark" ? "Light" : "Dark"}</span>
+          </button>
 
           {/* Hamburger — mobile only */}
           <button

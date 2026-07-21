@@ -1,0 +1,34 @@
+{
+  "bindings": {
+    "source-root": "lib"
+  },
+  "capsule": {
+    "digest": "cfc57762d1ca766f10a1205b0ac0ab221b47510e5e940f44d97b990589386675",
+    "id": "dark-theme",
+    "version": "0.1.0"
+  },
+  "choices": {
+    "theme-mode": "system-first"
+  },
+  "featureId": "dark-theme",
+  "installedAt": "2026-07-21T09:38:14.674Z",
+  "repositoryFingerprintHash": "48e60ddccb65edb5b4c099673a512de8d154d6073814315e49a84f2b274fa8ff",
+  "schemaVersion": 1,
+  "status": "installed",
+  "verification": {
+    "checks": [
+      {
+        "durationMs": 3826.73125,
+        "id": "project-build",
+        "status": "passed"
+      },
+      {
+        "durationMs": 3471.587459,
+        "id": "portfolio-build",
+        "status": "passed"
+      }
+    ],
+    "status": "passed",
+    "verifiedAt": "2026-07-21T09:38:14.674Z"
+  }
+}
