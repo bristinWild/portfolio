@@ -1,0 +1,133 @@
+{
+  "bindings": {
+    "source-root": "lib"
+  },
+  "capsule": {
+    "digest": "cfc57762d1ca766f10a1205b0ac0ab221b47510e5e940f44d97b990589386675",
+    "id": "dark-theme",
+    "version": "0.1.0"
+  },
+  "choices": {
+    "theme-mode": "system-first"
+  },
+  "currentWave": null,
+  "featureId": "dark-theme",
+  "nextWave": null,
+  "repository": {
+    "path": "/Users/bristinborah/portfolio/portfolio",
+    "startingCommit": "36d8305a316c499d0fd9f16d0a0242079d69378d"
+  },
+  "runId": "20260721t093211580z-a557b9916bbb87faef9f",
+  "schemaVersion": 1,
+  "status": "installed",
+  "timestamps": {
+    "completedAt": "2026-07-21T09:38:14.674Z",
+    "createdAt": "2026-07-21T09:32:11.580Z",
+    "startedAt": "2026-07-21T09:32:11.580Z",
+    "updatedAt": "2026-07-21T09:38:14.674Z"
+  },
+  "waveResults": [
+    {
+      "agents": [
+        {
+          "changedFiles": [],
+          "completedAt": "2026-07-21T09:32:54.495Z",
+          "name": "codex",
+          "sessionId": "019f8404-c846-70d0-97f4-2bc608c1d3c2",
+          "startedAt": "2026-07-21T09:32:11.620Z",
+          "status": "completed",
+          "summary": "Audit complete; no files were edited.\n\n- Shared layout: `app/layout.tsx`; page composition: `app/page.tsx`.\n- Styling: `app/globals.css` plus inline React styles; tokens are `--bg`, `--bg-alt`, `--surface`, `--text`, `--muted`, `--border`, and `--mono`.\n- Client boundaries: interactive components use `\"use client\"`; layout/page and static components remain server-default.\n- No theme provider, preference storage, dark-mode variables, or `prefers-color-scheme` support exists.\n- `lib/data.ts` verified as the resolved source anchor.\n- Check: `npm run lint` passed with 0 errors and 5 pre-existing warnings.\n- `.vibe/` remains untouched.",
+          "taskIds": [
+            "audit-theme-surface"
+          ]
+        }
+      ],
+      "completedAt": "2026-07-21T09:32:55.207Z",
+      "startedAt": "2026-07-21T09:32:11.588Z",
+      "status": "completed",
+      "taskIds": [
+        "audit-theme-surface"
+      ],
+      "verification": {
+        "checks": [],
+        "status": "passed",
+        "summary": "0 verification check(s) passed.",
+        "verifiedAt": "2026-07-21T09:32:55.207Z"
+      },
+      "wave": 1
+    },
+    {
+      "agents": [
+        {
+          "changedFiles": [
+            "app/globals.css",
+            "app/layout.tsx",
+            "components/Navbar.tsx"
+          ],
+          "completedAt": "2026-07-21T09:35:43.776Z",
+          "name": "codex",
+          "sessionId": "019f8405-6f3d-7c21-ae0d-2756fae1be6a",
+          "startedAt": "2026-07-21T09:32:55.231Z",
+          "status": "completed",
+          "summary": "Implemented dark theme wave:\n\n- Added system-preference dark palette with accessible contrast.\n- Preserved light theme and prevented preference flash via `beforeInteractive`.\n- Added persistent keyboard-accessible theme toggle to `Navbar`.\n- Added focus-visible styles and control/link color variables.\n\nChecks:\n\n- ESLint: passed with 5 pre-existing warnings.\n- TypeScript: passed.\n- Webpack production build: passed.\n- Turbopack build blocked by sandbox process permissions.\n- `.vibe/` remains untouched.",
+          "taskIds": [
+            "implement-dark-theme"
+          ]
+        }
+      ],
+      "completedAt": "2026-07-21T09:35:44.434Z",
+      "startedAt": "2026-07-21T09:32:55.211Z",
+      "status": "completed",
+      "taskIds": [
+        "implement-dark-theme"
+      ],
+      "verification": {
+        "checks": [],
+        "status": "passed",
+        "summary": "0 verification check(s) passed.",
+        "verifiedAt": "2026-07-21T09:35:44.434Z"
+      },
+      "wave": 2
+    },
+    {
+      "agents": [
+        {
+          "changedFiles": [
+            "README.md",
+            "app/globals.css",
+            "app/layout.tsx",
+            "components/Navbar.tsx"
+          ],
+          "completedAt": "2026-07-21T09:38:06.280Z",
+          "name": "codex",
+          "sessionId": "019f8408-0695-7092-accc-18cab1b31acc",
+          "startedAt": "2026-07-21T09:35:44.457Z",
+          "status": "completed",
+          "summary": "Implemented the theme verification wave:\n\n- Added reduced-motion safeguards for animations, transitions, and smooth scrolling.\n- Added theme acceptance checklist to `README.md`.\n- Preserved all existing user changes; did not modify `.cliper/` or `.vibe/`.\n\nChecks:\n\n- `npm run lint` passed with 5 pre-existing warnings.\n- `next build --webpack` passed.\n- `git diff --check` passed.\n- Live browser verification was blocked because local port binding and the browser runtime were unavailable.\n- No automated test script exists in `package.json`.",
+          "taskIds": [
+            "verify-theme"
+          ]
+        }
+      ],
+      "completedAt": "2026-07-21T09:38:10.832Z",
+      "startedAt": "2026-07-21T09:35:44.438Z",
+      "status": "completed",
+      "taskIds": [
+        "verify-theme"
+      ],
+      "verification": {
+        "checks": [
+          {
+            "durationMs": 3826.73125,
+            "id": "project-build",
+            "status": "passed"
+          }
+        ],
+        "status": "passed",
+        "summary": "1 verification check(s) passed.",
+        "verifiedAt": "2026-07-21T09:38:10.832Z"
+      },
+      "wave": 3
+    }
+  ]
+}
