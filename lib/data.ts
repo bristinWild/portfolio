@@ -113,11 +113,48 @@ export const data = {
       num: "01",
       name: "CredGate Protocol",
       desc: "The financial system is being rewritten on-chain. CredGate is a cross-chain credit layer Powered by Creditcoin's USC Testnet, Turning wallet history into a verified identity that any protocol on any chain can trust.",
-      href: "https://github.com/bristinWild/CredGate",
+      credgateLinks: {
+        repo: "https://github.com/bristinWild/CredGate",
+        demovideo: "https://youtu.be/3tCgcC9Or2k?si=WVEitoDmj9ncwiOO",
+      },
     },
 
     {
       num: "02",
+      name: "BruhMarket - Agentic Prediction market",
+      desc: "Bruh is a prediction market on Arc where AI agents, not humans and it enables the trading. Each agent holds its own USDC wallet, autonomously pays for its own research via x402 micropayments, forms a probability estimate with visible reasoning, and stakes real USDC on its conclusion.",
+      href: "#",
+      bruhLinks: {
+        repo: "https://github.com/bristinWild/bruh",
+        demovideo: "https://youtu.be/dYotA4p5f7Y",
+      },
+    },
+
+
+    {
+      num: "03",
+      name: "Cliper Memory",
+      desc: "Cliper Memory is a repository intelligence engine that converts source code, Git history, architecture, dependencies, and project metadata into structured memories that can be ingested by knowledge graph systems like Cognee.",
+      href: "#",
+      cliperLinks: {
+        repo: "https://github.com/bristinWild/cliper-sdk",
+        demovideo: "https://youtu.be/oaKzj__pCjs",
+      },
+    },
+
+    {
+      num: "04",
+      name: "Cliper slack agent",
+      desc: "Cliper helps non-technical teams understand engineering updates and project architecture in real time over slack app without waiting for developers response. It works by syncing real time git activities of dev team.",
+      href: "#",
+      cliperLinks: {
+        repo: "https://github.com/bristinWild/Cliper-slack-app",
+        demovideo: "https://youtu.be/t5Tn4W4pEno",
+      },
+    },
+
+    {
+      num: "05",
       name: "Tuniq - Logos Zk for Solana",
       desc: "Confidential computation on Logos LEZ; runs private predicates with RISC Zero proofs that settle to Solana without exposing the underlying data",
       href: "#",
@@ -127,17 +164,9 @@ export const data = {
       },
     },
 
+
     {
-      num: "03",
-      name: "Cliper Memory",
-      desc: "Cliper Memory is a repository intelligence engine that converts source code, Git history, architecture, dependencies, and project metadata into structured memories that can be ingested by knowledge graph systems like Cognee.",
-      href: "#",
-      credgateLinks: {
-        repo: "https://github.com/bristinWild/cliper-sdk",
-      },
-    },
-    {
-      num: "04",
+      num: "06",
       name: "Drox Social",
       desc: "Drox is a new-age web3 social and travel platform that helps people organize and join nearby real-world activities with friends and strangers. Built on the Status Network, it uses token-based commitment and reputation to make participation more reliable and community-driven.",
       href: "#",
@@ -147,13 +176,13 @@ export const data = {
       },
     },
     {
-      num: "05",
+      num: "07",
       name: "Predicted AI",
       desc: "Predicted.ai is an AI-powered platform that predicts which individuals are most likely to engage with a product or community. It analyzes product context to generate per-user likelihood scores along with insights, helping businesses target high-intent users and improve acquisition efficiency.",
       href: "https://github.com/bristinWild/predictedAI",
     },
     {
-      num: "06",
+      num: "08",
       name: "Credgate SDKs",
       desc: "Developer SDKs for integrating CredGate's on-chain credit layer ,verify wallet identities, query credit scores, and build trust-aware protocols across any EVM chain.",
       href: "#",
@@ -163,7 +192,7 @@ export const data = {
       },
     },
     {
-      num: "07",
+      num: "09",
       name: "Ozon SDKs & Tool Kits",
       desc: "ozon-cli is a command-line tool that enables developers and operators to register, manage, and interact with Ozon's restaking protocol and AVS infrastructure on Solana. Operator Nodes Client is an Operator Slashboard helps to monitor operator nodes getting slashed for mishaving while validating. AVS SDK is Command-line tool for AVS (Actively Validated Service) owners to create, manage, and monitor oracle validation tasks on Solana which is a part of the Ozon Restaking Protocol.",
       href: "#",
@@ -179,6 +208,18 @@ export const data = {
       LogosLinks12: {
         MergedPR: "https://github.com/logos-co/lambda-prize/pull/14",
         ForkedRepository: "https://github.com/bristinWild/logos-execution-zone",
+      },
+      external: true,
+    },
+
+    {
+      num: "02",
+      name: "Awarded Logos LP-0013: Token Program Improvements: Authorities",
+      desc: "Implemented a complete mint authority model for the LEZ Token program. Fungible tokens can now be created with a designated mint authority that can mint additional supply, rotate control to a new key, or permanently revoke minting to fix the supply.",
+      href: "#",
+      LogosLinks12: {
+        MergedPR: "https://github.com/logos-co/lambda-prize/pull/56",
+        ForkedRepository: "https://github.com/bristinWild/lez-programs",
       },
       external: true,
     },

@@ -109,6 +109,7 @@ export default function Awards() {
                 <div style={{ marginTop: "48px" }}>
                     {data.awards.map((item) => {
                         const isLP12 = item.name === "Awarded Logos LP-0012: Event/Log Mechanism";
+                        const isLP13 = item.name === "Awarded Logos LP-0013: Token Program Improvements: Authorities";
 
                         if (isLP12) {
                             return (
@@ -122,6 +123,23 @@ export default function Awards() {
                                     onToggle={() => setDroxOpen(!droxOpen)}
                                 >
                                     <LinkBtn href="https://github.com/logos-co/lambda-prize/pull/14" label="Merged PR ↗" />
+                                    <LinkBtn href="https://github.com/bristinWild/lez-programs" label="Forked Repository ↗" />
+                                </ExpandableRow>
+                            );
+                        }
+
+                        if (isLP13) {
+                            return (
+                                <ExpandableRow
+                                    key={item.num}
+                                    item={item}
+                                    hovered={hovered}
+                                    open={droxOpen}
+                                    onHoverEnter={() => setHovered(item.num)}
+                                    onHoverLeave={() => setHovered(null)}
+                                    onToggle={() => setDroxOpen(!droxOpen)}
+                                >
+                                    <LinkBtn href="https://github.com/logos-co/lambda-prize/pull/56" label="Merged PR ↗" />
                                     <LinkBtn href="https://github.com/bristinWild/logos-execution-zone" label="Forked Repository ↗" />
                                 </ExpandableRow>
                             );
